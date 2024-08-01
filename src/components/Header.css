@@ -1,0 +1,72 @@
+.header-container{
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    height: 80px;
+    justify-content: space-between;
+
+}
+.header-searchbar{
+    min-width:310px ;
+}
+.header-items{
+    margin-right: 8px;
+    display: flex;
+}
+.header-icon {
+    background-color: #3b3b3c;
+    color: #92999f;
+    padding: 8px;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    margin-right: 8px;
+  }
+
+.profile-pic{
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 0;
+    margin-left: 10px; 
+}
+.notification-wrapper {
+    position: relative;
+    display: inline-block;
+  }
+  .notification-dot {
+    position: absolute;
+    top: 8px; 
+    right: 16px; 
+    width: 9px;
+    height: 9px;
+    background-color: var(--purple-blue);
+    border-radius: 50%;
+    border: 1px solid rgb(54, 49, 49); /* Optional: to create a white border around the dot */
+  }
+
+/* .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 10px;
+    height: fit-content;
+    position: fixed;
+    background-color: var(--darkTwo);
+  }
+  .icons {
+    background-color: pink;
+  }
+  .header-icon {
+    background-color: #3b3b3c;
+    color: #92999f;
+    padding: 8px;
+    border-radius: 50%;
+    font-size: 1.5rem;
+  }
+  .profile-pic{
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 0;
+    margin-left: 10px;
+}
+
+   */ 
