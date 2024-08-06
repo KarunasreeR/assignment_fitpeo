@@ -1,0 +1,36 @@
+.profile-pic {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    margin: 0 8px;
+}
+
+.header-icon {
+    background-color: #44464a;
+    color: #92999f;
+    padding: 8px;
+    border-radius: 50%;
+    font-size: 2.5rem;
+    margin: 0 5px;
+}
+.header-icon:hover {
+    background-color: #44464a80;
+    cursor: pointer;
+}
+.profile-pic:hover {
+    cursor: pointer;
+}
+.notification-wrapper {
+    position: relative;
+    display: inline-block;
+}
+.notification-dot {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    width: 9px;
+    height: 9px;
+    background-color: var(--purple-blue);
+    border-radius: 50%;
+    border: 1px solid rgb(54, 49, 49); /* Optional: to create a white border around the dot */
+}
