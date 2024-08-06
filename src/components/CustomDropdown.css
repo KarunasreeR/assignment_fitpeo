@@ -1,0 +1,18 @@
+.custom-icon {
+    color: white;
+    background-color: #44464a;
+    border-radius: 50%;
+    font-size: 30px;
+    padding: 5px;
+}
+
+.dropdown-container:hover {
+    cursor: pointer;
+    background-color: #373a49;
+    border-radius: 5px;
+}
+.dropdown-container:hover .custom-icon {
+    cursor: pointer;
+    background-color: #373a49;
+    border-radius: 5px;
+}

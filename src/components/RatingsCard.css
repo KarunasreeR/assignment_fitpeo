@@ -1,0 +1,26 @@
+/* .header-icon {
+    color: #92999f;
+    padding: 8px;
+    font-size: 2.5rem;
+    margin-right: 8px;
+} */
+
+.ratings-profilepic {
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 0;
+    border-radius: 50%;
+    background-color: #3b3b3c;
+}
+.margin-left {
+    margin-left: 10px;
+}
+.rating-description {
+    font-size: 13px;
+    color: #d7d9e1;
+}
+.ratings-container {
+    border-bottom: 1px solid rgb(52, 52, 52);
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+}

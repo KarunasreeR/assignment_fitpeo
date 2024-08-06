@@ -1,0 +1,287 @@
+return (
+<div className="homepage-container p-4 h-100">
+<div className=" fs-4 mb-3">
+<b>Dashboard</b>
+</div>
+<Row className="card-row h-25">
+<Col sm="4" xs="6" lg="2" className="card-col mb-3">
+<Card body className="card-equal-height">
+<div>
+<div>
+<CustomIcon
+iconColor="#4363f6"
+icon={
+<FaShoppingBasket
+className="main-icon"
+style={{ color: '#4363f6' }}
+/>
+}
+subIcon={
+<AiFillPlusCircle
+className="sub-icon"
+style={{ color: '#4363f6' }}
+/>
+}
+/>
+</div>
+<div className="mt-2 mb-2">Total Orders</div>
+<div className="d-flex flex-row justify-content-between align-items-center">
+<div className="fs-5 fw-bold">75</div>
+<div
+className="fw-bold"
+style={{ color: '#03c58b' }} >
+<span>
+<IoMdArrowDropup />
+</span>
+<span>3%</span>
+</div>
+</div>
+</div>
+</Card>
+</Col>
+<Col sm="4" xs="6" lg="2" className="card-col mb-3">
+<Card body className="card-equal-height">
+<div>
+<div>
+<CustomIcon
+iconColor="#03c58b"
+icon={
+<PiHandbagSimpleFill
+className="main-icon"
+style={{ color: '#03c58b' }}
+/>
+}
+subIcon={
+<FcOk
+className="sub-icon"
+style={{ color: '#03c58b' }}
+/>
+}
+/>
+</div>
+<div className="mt-2 mb-2">Total Delivered</div>
+<div className="d-flex flex-row justify-content-between align-items-center">
+<div className="fs-5 fw-bold">70</div>
+<div
+className="fw-bold"
+style={{ color: '#f45c5d' }} >
+<span>
+<IoMdArrowDropdown />
+</span>
+<span>3%</span>
+</div>
+</div>
+</div>
+</Card>
+</Col>
+<Col sm="4" xs="6" lg="2" className="card-col mb-3">
+<Card body className="card-equal-height">
+<div>
+<div>
+<CustomIcon
+iconColor="#f45c5d"
+icon={
+<PiHandbagSimpleFill
+className="main-icon"
+style={{ color: '#f45c5d' }}
+/>
+}
+subIcon={
+<MdCancel
+className="sub-icon"
+style={{ color: '#f45c5d' }}
+/>
+}
+/>
+</div>
+<div className="mt-2 mb-2">Total Cancelled</div>
+<div className="d-flex flex-row justify-content-between align-items-center">
+<div className="fs-5 fw-bold">05</div>
+<div
+className="fw-bold"
+style={{ color: '#03c58b' }} >
+<span>
+<IoMdArrowDropup />
+</span>
+<span>3%</span>
+</div>
+</div>
+</div>
+</Card>
+</Col>
+<Col sm="4" xs="6" lg="2" className="card-col mb-3">
+<Card body className="card-equal-height">
+<div>
+<div>
+<CustomIcon
+arrowIcon={true}
+iconColor="#e0429d"
+icon={
+<FaDownLong
+className="main-icon arrow-icon"
+style={{ color: '#e0429d' }}
+/>
+}
+subIcon={
+<AiFillDollarCircle
+className="arrow-sub-icon sub-icon"
+style={{ color: '#e0429d' }}
+/>
+}
+/>
+</div>
+<div className="mt-2 mb-2">Total Revenue</div>
+<div className="d-flex flex-row justify-content-between align-items-center">
+<div className="fs-5 fw-bold">$12K</div>
+<div
+className="fw-bold"
+style={{ color: '#f45c5d' }} >
+<span>
+<IoMdArrowDropdown />
+</span>
+<span>3%</span>
+</div>
+</div>
+</div>
+</Card>
+</Col>
+<Col sm="8" xs="12" lg="4" className="card-col mb-3">
+<Card body className="card-equal-height">
+<div className="d-flex flex-row justify-content-between align-items-center">
+<div>
+<div>Net Profit</div>
+<div className="fs-3 mt-2 mb-2 fw-bold">
+$ 6759.25
+</div>
+<div
+className="fw-bold"
+style={{ color: '#84cf77' }} >
+<span>
+<IoMdArrowDropup />
+</span>
+<span>3%</span>
+</div>
+</div>
+<div className="d-flex flex-column align-items-center">
+<div className="custom-progress-bar">
+<CircularProgressbarWithChildren
+value={percentage}
+strokeWidth={12}
+styles={buildStyles({
+// backgroundColor: '#3e98c7',
+
+                                            textColor: '#fff',
+                                            pathColor: '#7492fc',
+                                            trailColor: '#7492fc80',
+                                        })}
+                                    >
+                                        <div
+                                            style={{
+                                                fontSize: 20,
+                                                marginTop: -5,
+                                            }}
+                                        >
+                                            <strong>{percentage}%</strong>
+                                        </div>
+                                        <div className="subscript">Goal</div>
+                                        <div className="subscript">
+                                            Completed
+                                        </div>
+                                    </CircularProgressbarWithChildren>
+                                </div>
+                                <div>
+                                    <sub className="subscript">
+                                        *The values here has been rounded off.
+                                    </sub>
+                                </div>
+                            </div>
+                        </div>
+                    </Card>
+                </Col>
+            </Row>
+            <Row className="card-row h-25">
+                <Col sm="12" lg="8" className="card-col mb-3">
+                    <Card body className="card-equal-height">
+                        <CustomBarChart />
+                    </Card>
+                </Col>
+                <Col sm="12" lg="4" className="card-col mb-3">
+                    <Card
+                        body
+                        className="card-equal-height justify-content-center"
+                    >
+                        <div className="d-flex flex-column">
+                            <div>
+                                <CustomDropdown
+                                    icon={
+                                        <TbCurrentLocation
+                                            style={{
+                                                color: '#eb7334',
+                                                backgroundColor: '#eb733480',
+                                                borderRadius: '50%',
+                                                fontSize: '40px',
+                                                padding: '5px',
+                                            }}
+                                        />
+                                    }
+                                    text="Goals"
+                                />
+                            </div>
+                            <div>
+                                <CustomDropdown
+                                    text="Popular dishes"
+                                    icon={
+                                        <LiaHamburgerSolid
+                                            style={{
+                                                color: '#7a89e5',
+                                                backgroundColor: '#7a89e580',
+                                                borderRadius: '50%',
+                                                fontSize: '40px',
+                                                padding: '5px',
+                                            }}
+                                        />
+                                    }
+                                />
+                            </div>
+                            <div>
+                                <CustomDropdown
+                                    text="Menus"
+                                    icon={
+                                        <LiaConciergeBellSolid
+                                            style={{
+                                                color: '#2b94c1',
+                                                backgroundColor: '#2b94c180',
+                                                borderRadius: '50%',
+                                                fontSize: '40px',
+                                                padding: '5px',
+                                            }}
+                                        />
+                                    }
+                                />
+                            </div>
+                        </div>
+                    </Card>
+                </Col>
+            </Row>
+            <Row className="card-row h-50">
+                <Col sm="12" lg="8" className="card-col mb-3">
+                    <Card body className="card-equal-height">
+                        <b className="fontsize-20 mb-2">Recent Orders</b>
+                        <div className="table-container">
+                            <CustomTable />
+                        </div>
+                    </Card>
+                </Col>
+                <Col sm="12" lg="4" className="card-col mb-3">
+                    <Card body className="card-equal-height ">
+                        <b className="fontsize-20 mb-2">Customer's Feedback</b>
+                        <div className="scrollable">
+                            {reviews.map((ele) => (
+                                <RatingsCard data={ele} />
+                            ))}
+                        </div>
+                    </Card>
+                </Col>
+            </Row>
+        </div>
+    )

@@ -1,3 +1,65 @@
-.homepage-container{
-    padding: 10px;
+/* .homepage-container {
+    color: white;
+}
+
+.card-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 0px;
+}
+
+.card-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-equal-height.card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--darkTwo);
+    color: white;
+}
+.custom-progress-bar {
+    width: 100px;
+    height: 100px;
+}
+.subscript {
+    font-size: 8px;
+}
+.scrollable-ratings-container {
+    height: 200px;
+    overflow: scroll;
+    scrollbar-color: #888 #f1f1f1;
+}
+.table-container {
+    height: 200px;
+} */
+
+.card-body.card {
+    background-color: var(--darkTwo);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-col {
+    display: flex;
+    flex-direction: column;
+}
+.custom-progress-bar {
+    width: 100px;
+    height: 100px;
+}
+.subscript {
+    font-size: 8px;
+}
+
+.scrollable-ratings-container,
+.scrollable-table-container {
+    height: 400px;
+    overflow: auto;
+    scrollbar-color: #888 #f1f1f1;
 }

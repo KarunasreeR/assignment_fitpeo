@@ -1,24 +1,31 @@
-.profile-pic {
-    width: 2.5rem;
-    height: 2.5rem;
-    border-radius: 50%;
-    margin: 0 8px;
+.header-container {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    height: 80px;
+    justify-content: space-between;
 }
-
+.header-searchbar {
+    min-width: 310px;
+}
+.header-items {
+    margin-right: 8px;
+    display: flex;
+}
 .header-icon {
-    background-color: #44464a;
+    background-color: #3b3b3c;
     color: #92999f;
     padding: 8px;
     border-radius: 50%;
     font-size: 2.5rem;
-    margin: 0 5px;
+    margin-right: 8px;
 }
-.header-icon:hover {
-    background-color: #44464a80;
-    cursor: pointer;
-}
-.profile-pic:hover {
-    cursor: pointer;
+
+.profile-pic {
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 0;
+    margin-left: 10px;
 }
 .notification-wrapper {
     position: relative;
